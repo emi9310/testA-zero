@@ -247,6 +247,28 @@
                    
                  
         </script>
+            
+            ////////////////////////////////////////////////////////////////////////////////////////
+<script>
+function delayRedirect(){
+    document.getElementById('delayMsg').innerHTML = 'Volveras en : <span id="countDown">3</span> seconds....';
+    var count = 5;
+    setInterval(function(){
+        count--;
+        document.getElementById('countDown').innerHTML = count;
+        if (count == 0) {
+            window.location = 'https://www.a-zero.com.ar'; 
+        }
+    },1000);
+}
+</script>
+ 
+            
+            <div id="delayMsg"></div>
+<input type="button" onclick="delayRedirect()" value="Click para volver"/>
+            
+            
+            ///////////////////////////////////////////////////////////////////////////////////////
         
         <input type="hidden" name="access_key" value="a3710021-4249-440f-a678-41fd6080711b">
     
@@ -254,7 +276,7 @@
     
         <input type="hidden" name="redirect" value="https://web3forms.com/success">
     
-        <button type="submit">Submit Form</button>
+        <button type="submit">Guardar</button>
        
     </form>
     
