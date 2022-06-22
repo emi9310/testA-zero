@@ -12,7 +12,7 @@
     
         <title>A-Zero Slackline</title>
         <!--img src="Slackline.jpg" alt="HTML5 Icon" style="width:1366px;height:250px;"-->
-        <table style="border-collapse: collapse; width: 100%; height: 256px;" border="1">
+        <table style="border: hidden"; width: 100%; height: 256px;" border="1">
 <tbody>
 <tr style="height: 238px;">
 <td style="width: 33.3333%; height: 238px;">&nbsp;</td>
@@ -22,7 +22,7 @@
 <tr style="height: 18px;">
 <td style="width: 33.3333%; height: 18px;">&nbsp;</td>
 <td style="width: 33.3333%; height: 18px; text-align: center;">
-<h1>Pedidos A-Zero</h1>
+<h1 style="text-align: left;">Pedidos A-Zero</h1>
 </td>
 <td style="width: 33.3333%; height: 18px;">&nbsp;</td>
 </tr>
@@ -265,7 +265,7 @@
             
 <script>
 function delayRedirect(){
-    document.getElementById('delayMsg').innerHTML = 'Volveras en : <span id="countDown">3</span> seconds....';
+    document.getElementById('delayMsg').innerHTML = 'Volveras en : <span id="countDown">5</span> seconds....';
     var count = 5;
     setInterval(function(){
         count--;
@@ -283,7 +283,7 @@ function delayRedirect(){
     
     
     
-        <input type="hidden" name="redirect" onclick="delayRedirect()" value="https://web3forms.com/success">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
     
         <button type="submit">Guardar</button>
        
